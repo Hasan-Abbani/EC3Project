@@ -1,0 +1,13 @@
+{
+  "held_out_phylum": "Bacillota",
+  "seed": 355,
+  "seen_test_fraction": 0.1,
+  "validation_fraction_of_remainder": 0.1,
+  "min_train_per_class": 10,
+  "cluster_min_identity": 0.5,
+  "cluster_coverage": 0.8,
+  "cluster_cov_mode": 0,
+  "remove_exact_train_unseen_duplicates": true,
+  "final_proteins": 146072,
+  "final_train_classes": 168
+}

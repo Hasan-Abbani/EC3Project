@@ -1,0 +1,13 @@
+held_out_phylum	group	proteins	ec3_classes	phyla	lab_tested_percent
+Actinomycetota	train	109409	177	34	3.4430439908965447
+Actinomycetota	validation	12158	155	29	3.6930416186872845
+Actinomycetota	seen_test	13666	152	28	3.519683887018879
+Actinomycetota	unseen_test	11062	154	1	10.784668233592479
+Bacillota	train	96541	168	34	3.998301239887716
+Bacillota	validation	10681	136	28	4.063289954124145
+Bacillota	seen_test	11962	149	27	4.104664771777295
+Bacillota	unseen_test	26888	156	1	4.024099970246951
+Cyanobacteriota	train	112145	179	33	4.230237638771234
+Cyanobacteriota	validation	12977	155	29	4.053325113662634
+Cyanobacteriota	seen_test	13908	149	30	3.6022433132010354
+Cyanobacteriota	unseen_test	7276	131	1	2.0065970313358985
