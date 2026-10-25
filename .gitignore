@@ -9,3 +9,10 @@ venv/
 .codex/
 .agents/
 **/mmseqs_tmp/
+
+# Reproducible nearest-training search intermediates and preflight runs.
+/analysis/nearest_train_identity/pilot/
+/analysis/nearest_train_identity_preflight/
+/analysis/nearest_train_identity/*/*_tmp/
+/analysis/nearest_train_identity/*/*_db*
+/analysis/nearest_train_identity/*/*_alignments*

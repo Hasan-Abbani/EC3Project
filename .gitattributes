@@ -1,3 +1,8 @@
 *.fasta filter=lfs diff=lfs merge=lfs -text
 data/*.tsv filter=lfs diff=lfs merge=lfs -text
 splits_ec3/*/proteins_split_*.tsv filter=lfs diff=lfs merge=lfs -text
+analysis/nearest_train_identity/*/seen_test_hits.tsv filter=lfs diff=lfs merge=lfs -text
+analysis/nearest_train_identity/*/unseen_test_hits.tsv filter=lfs diff=lfs merge=lfs -text
+# Preserve analysis bytes and the script checksum across checkouts.
+analysis/nearest_train_identity/** -text
+code/nearest_train_identity.py text eol=lf

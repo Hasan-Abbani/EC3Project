@@ -1,0 +1,5 @@
+{
+  "original_run_script_sha256": "68a2eeacc95443ecb07e763ad631db574ab6d036d30f2ca60a87dfcf64ecadb4",
+  "final_script_sha256": "9d166c1aac66e499aa7b07bab358fa2e9424a98860fdd53c776ed3734a9a57fc",
+  "reason": "Final reduction maximizes reported fident directly and adds query/winning-target U/O flags. Raw searches and search parameters are unchanged. Final rerun reuses checksummed hit tables."
+}

@@ -1,0 +1,7 @@
+held_out_phylum	group	expected	with_hit	no_hit	queries_with_U_or_O	winning_targets_with_U_or_O	min	median	mean	max
+Actinomycetota	seen_test	13666	13008	658	1	0	0.207	0.49	0.4959512607626076	0.997
+Actinomycetota	unseen_test	11062	9476	1586	0	0	0.188	0.472	0.474647214014352	1.0
+Bacillota	seen_test	11962	11038	924	6	6	0.21	0.489	0.48894174669324153	0.997
+Bacillota	unseen_test	26888	24874	2014	8	8	0.188	0.497	0.49929532845541535	0.996
+Cyanobacteriota	seen_test	13908	13159	749	0	3	0.218	0.482	0.48739759860171744	1.0
+Cyanobacteriota	unseen_test	7276	6464	812	0	0	0.201	0.491	0.4996093750000001	0.869

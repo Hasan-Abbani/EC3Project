@@ -1,0 +1,4 @@
+held_out_phylum	common_range_min	common_range_max	seen_fraction_in_common_range	unseen_fraction_in_common_range	ecdf_max_absolute_difference
+Actinomycetota	0.207	0.997	1.0	0.9996834107218235	0.15566963499943146
+Bacillota	0.21	0.996	0.9998188077550281	0.9997587842727346	0.16818704301933962
+Cyanobacteriota	0.218	0.869	0.9870810851888442	0.999690594059406	0.1043542837451159

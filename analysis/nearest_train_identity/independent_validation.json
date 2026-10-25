@@ -1,0 +1,60 @@
+{
+  "all_passed": true,
+  "split_hashes_unchanged": true,
+  "groups": [
+    {
+      "held_out_phylum": "Actinomycetota",
+      "group": "seen_test",
+      "expected": 13666,
+      "raw_hit_rows": 1877242,
+      "all_accessions_present": true,
+      "reported_maxima_verified": true,
+      "no_hit": 658
+    },
+    {
+      "held_out_phylum": "Actinomycetota",
+      "group": "unseen_test",
+      "expected": 11062,
+      "raw_hit_rows": 2007581,
+      "all_accessions_present": true,
+      "reported_maxima_verified": true,
+      "no_hit": 1586
+    },
+    {
+      "held_out_phylum": "Bacillota",
+      "group": "seen_test",
+      "expected": 11962,
+      "raw_hit_rows": 1644523,
+      "all_accessions_present": true,
+      "reported_maxima_verified": true,
+      "no_hit": 924
+    },
+    {
+      "held_out_phylum": "Bacillota",
+      "group": "unseen_test",
+      "expected": 26888,
+      "raw_hit_rows": 4767135,
+      "all_accessions_present": true,
+      "reported_maxima_verified": true,
+      "no_hit": 2014
+    },
+    {
+      "held_out_phylum": "Cyanobacteriota",
+      "group": "seen_test",
+      "expected": 13908,
+      "raw_hit_rows": 1694814,
+      "all_accessions_present": true,
+      "reported_maxima_verified": true,
+      "no_hit": 749
+    },
+    {
+      "held_out_phylum": "Cyanobacteriota",
+      "group": "unseen_test",
+      "expected": 7276,
+      "raw_hit_rows": 1675521,
+      "all_accessions_present": true,
+      "reported_maxima_verified": true,
+      "no_hit": 812
+    }
+  ]
+}

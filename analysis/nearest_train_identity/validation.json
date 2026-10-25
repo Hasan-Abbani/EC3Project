@@ -1,0 +1,60 @@
+{
+  "split_files_unchanged": true,
+  "groups": [
+    {
+      "held_out_phylum": "Actinomycetota",
+      "group": "seen_test",
+      "all_expected_accessions_present": true,
+      "targets_in_final_train": true,
+      "first_hit_below_max": 4994,
+      "no_qualifying_hit": 658,
+      "hit_table_sha256": "63292cc45295be23fff0fdbc6af9c2db985d005f6eec5a82beee74c8190fae61"
+    },
+    {
+      "held_out_phylum": "Actinomycetota",
+      "group": "unseen_test",
+      "all_expected_accessions_present": true,
+      "targets_in_final_train": true,
+      "first_hit_below_max": 4629,
+      "no_qualifying_hit": 1586,
+      "hit_table_sha256": "817c516f10fd2e5c2021862e11a8f3b38241fc481773f4f59d99b08207cf35f6"
+    },
+    {
+      "held_out_phylum": "Bacillota",
+      "group": "seen_test",
+      "all_expected_accessions_present": true,
+      "targets_in_final_train": true,
+      "first_hit_below_max": 4410,
+      "no_qualifying_hit": 924,
+      "hit_table_sha256": "4eb5bfe95be2e6871650bb2f354f522933ca58efd458b0fa58915a80236aaef4"
+    },
+    {
+      "held_out_phylum": "Bacillota",
+      "group": "unseen_test",
+      "all_expected_accessions_present": true,
+      "targets_in_final_train": true,
+      "first_hit_below_max": 11713,
+      "no_qualifying_hit": 2014,
+      "hit_table_sha256": "b4d5866cc902c45167a3eea0f0d8f9d8f63a740a9b2760e93bb8b8ee20c89b40"
+    },
+    {
+      "held_out_phylum": "Cyanobacteriota",
+      "group": "seen_test",
+      "all_expected_accessions_present": true,
+      "targets_in_final_train": true,
+      "first_hit_below_max": 5277,
+      "no_qualifying_hit": 749,
+      "hit_table_sha256": "16e798d0539c9d10eb5e0f9a50f7e614ad7273eec96cc80658bb1395b2246074"
+    },
+    {
+      "held_out_phylum": "Cyanobacteriota",
+      "group": "unseen_test",
+      "all_expected_accessions_present": true,
+      "targets_in_final_train": true,
+      "first_hit_below_max": 3496,
+      "no_qualifying_hit": 812,
+      "hit_table_sha256": "054a42c54c1428c83c4cecdbff835bd40ea18cea8c610513469b394f0ac1ec65"
+    }
+  ],
+  "finished_utc": "2026-10-23T10:54:03.913350+00:00"
+}
