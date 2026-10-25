@@ -6,3 +6,5 @@ analysis/nearest_train_identity/*/unseen_test_hits.tsv filter=lfs diff=lfs merge
 # Preserve analysis bytes and the script checksum across checkouts.
 analysis/nearest_train_identity/** -text
 code/nearest_train_identity.py text eol=lf
+analysis/similarity_bins/** -text
+code/make_similarity_bins.py text eol=lf

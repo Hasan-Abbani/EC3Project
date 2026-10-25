@@ -25,5 +25,14 @@ Regression checks: `python code/test_nearest_train_identity.py`.
 Final analysis results, search logs, and validation records are versioned.
 FASTA files and large raw hit tables use Git LFS (`git lfs install` before
 cloning or pulling). MMseqs2 databases, temporary files, and preflight runs
-remain local and can be regenerated. No similarity strata have been selected
-and no classifier has been trained at this stage.
+remain local and can be regenerated.
+
+Sequence-similarity strata:
+Run `python code/make_similarity_bins.py` to create a new
+`analysis/similarity_bins/` directory (existing outputs are never overwritten).
+See [the binning decision and validation report](analysis/similarity_bins/report.md).
+The common strata are <30%, 30-40%, 40-50%, 50-60%, 60-70%, and 70-100%,
+with `no_hit` kept separate. Each numerical stratum has at least 100 proteins
+per test group in every experiment. Regression checks:
+`python code/test_make_similarity_bins.py`.
+No classifier has been trained at this stage.

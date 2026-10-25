@@ -1,0 +1,111 @@
+{
+  "minimum_per_group_per_experiment": 100,
+  "minimum_support_rule_fixed_before_selection": true,
+  "support_rationale": "100 gives worst-case SE 0.05 for a simple independent proportion; a pragmatic floor, not a guarantee for class-specific or clustered estimates.",
+  "base_grid_percent": [
+    0,
+    20,
+    30,
+    40,
+    50,
+    60,
+    70,
+    80,
+    90,
+    100
+  ],
+  "final_edges_percent": [
+    0,
+    30,
+    40,
+    50,
+    60,
+    70,
+    100
+  ],
+  "final_labels": [
+    "<30%",
+    "30-40%",
+    "40-50%",
+    "50-60%",
+    "60-70%",
+    "70-100%"
+  ],
+  "closure": "Left-closed/right-open; last numerical bin includes 100%; no_hit is separate",
+  "selection": "Finest common supported adjacent coarsening of the fixed grid; ties by squared widths then lexicographic edges",
+  "candidates": {
+    "ten_percentage_points_with_below20": [
+      0,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100
+    ],
+    "twenty_percentage_points_with_below20": [
+      0,
+      20,
+      40,
+      60,
+      80,
+      100
+    ],
+    "coarse_twenty_with_merged_tails": [
+      0,
+      40,
+      60,
+      100
+    ],
+    "central_tens_broad_tails": [
+      0,
+      30,
+      40,
+      50,
+      60,
+      100
+    ],
+    "selected_common_adjacent_merges": [
+      0,
+      30,
+      40,
+      50,
+      60,
+      70,
+      100
+    ]
+  },
+  "selection_variables": [
+    "max_train_identity",
+    "group",
+    "held_out_phylum"
+  ],
+  "input_sha256": {
+    "analysis\\nearest_train_identity\\summary.tsv": "e2cfb608ac619fb4e452b0d73814a08062927a6cab0ce88a6f5b555466ce1122",
+    "analysis\\nearest_train_identity\\distribution_overlap.tsv": "b1d9fcbc40cb82a8227f6202e4bf2e362fc95345bd47cd33e0d11d7d6f35a5ee",
+    "analysis\\nearest_train_identity\\report.md": "d9acdbe2a18622154819567e792443f028e693d5501cb6c5b2344f154076194d",
+    "analysis\\nearest_train_identity\\settings.json": "22d1689dbd2b1d9f444b33cde5c184d676c1bab543b15e12c1c6b183ed8dfcaa",
+    "analysis\\nearest_train_identity\\validation.json": "b09ce08c8a828e4aa0e518f8d3fdcac86c40312c2a1e7a4a725ff5bb07a007bd",
+    "analysis\\nearest_train_identity\\independent_validation.json": "4b964cf6ed673e8830e7e61dfbad75d4b5a80cc568418da38cb41d12d16f99cc",
+    "analysis\\nearest_train_identity\\identity_distributions.pdf": "62263b3bac71c4022912dbac21b5a51b4b8113a397214db035ac43ba6f5f8447",
+    "analysis\\nearest_train_identity\\Actinomycetota\\test_nearest_train_identity.tsv": "be4885d999f06ecc1fbe8615964c7f2a81bf53611df7d5746dd5a7b18e353559",
+    "analysis\\nearest_train_identity\\Actinomycetota\\seen_test_nearest_train_identity.tsv": "3f3054ebeca3b16cb320ae2f5ac1f74ab7728ea24ec0f457b3734113b7452f45",
+    "analysis\\nearest_train_identity\\Actinomycetota\\unseen_test_nearest_train_identity.tsv": "e23b53c094500d9f5be2199316b6c7e463cfccadb48ce2660e9c24df4c4a0485",
+    "splits_ec3\\Actinomycetota\\split_Actinomycetota.tsv": "21e59195fe6ca568706ac47ba21c6f22ec24c2678c628eaa28f4027ec784def0",
+    "analysis\\nearest_train_identity\\Bacillota\\test_nearest_train_identity.tsv": "4ed8542066b106d26a9dca2fb26ced7c8b39506fb451261f1a56324b90541e90",
+    "analysis\\nearest_train_identity\\Bacillota\\seen_test_nearest_train_identity.tsv": "a89711a9cb85cf44d070afcbdcc72a45974b50fce0c8c07093775f5fb9cb2241",
+    "analysis\\nearest_train_identity\\Bacillota\\unseen_test_nearest_train_identity.tsv": "93cc3ac2c4d3cae9e4fa4c19291fd8de8779fc3f3ebef68023112a2170e91043",
+    "splits_ec3\\Bacillota\\split_Bacillota.tsv": "ed0df3cafa4ff0bab2462b2ece5fb090c808066efd78704d59ff92dfef46ef4a",
+    "analysis\\nearest_train_identity\\Cyanobacteriota\\test_nearest_train_identity.tsv": "e80a61814d5b88066a2d77bb566fd2a5a135f6e65123aa44cf4327d4a6b4bbed",
+    "analysis\\nearest_train_identity\\Cyanobacteriota\\seen_test_nearest_train_identity.tsv": "dcca54ed64e2ae3aaa36035706ba05f133a1939c4a679c288f071765531aa963",
+    "analysis\\nearest_train_identity\\Cyanobacteriota\\unseen_test_nearest_train_identity.tsv": "c15bf597a659a9490b99cdf1b496b7557af93c40d33a992dfd0364057d5700e7",
+    "splits_ec3\\Cyanobacteriota\\split_Cyanobacteriota.tsv": "ae5d3bc39f523083612d4aec149394d1763a252494084a94da613400434d874f"
+  },
+  "script_sha256": "5f54f26cb40c7cd775a390690e5294c1ed8d8306cc59861c582cf524f020dedc",
+  "pandas_version": "3.0.2",
+  "numpy_version": "2.4.3",
+  "matplotlib_version": "3.10.8"
+}

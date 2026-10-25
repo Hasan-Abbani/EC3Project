@@ -1,0 +1,22 @@
+scheme	held_out_phylum	similarity_bin	lower_percent	upper_percent	seen_test	unseen_test	total	proportion_seen_test	proportion_unseen_test	numerical	support_rule_passed
+selected_common_adjacent_merges	Actinomycetota	<30%	0.0	30.0	178	461	639	0.013025025611005416	0.041674199963840176	True	True
+selected_common_adjacent_merges	Actinomycetota	30-40%	30.0	40.0	1170	1513	2683	0.0856139323869457	0.13677454348219129	True	True
+selected_common_adjacent_merges	Actinomycetota	40-50%	40.0	50.0	6199	3908	10107	0.4536074930484414	0.35328150424877963	True	True
+selected_common_adjacent_merges	Actinomycetota	50-60%	50.0	60.0	4199	2481	6680	0.30725889067759404	0.22428132344964744	True	True
+selected_common_adjacent_merges	Actinomycetota	60-70%	60.0	70.0	887	981	1868	0.0649056051514708	0.08868197432652324	True	True
+selected_common_adjacent_merges	Actinomycetota	70-100%	70.0	100.0	375	132	507	0.02744036294453388	0.01193274272283493	True	True
+selected_common_adjacent_merges	Actinomycetota	no_hit			658	1586	2244	0.04814869018000878	0.14337371180618333	False	
+selected_common_adjacent_merges	Bacillota	<30%	0.0	30.0	268	727	995	0.02240428022069888	0.02703808390360012	True	True
+selected_common_adjacent_merges	Bacillota	30-40%	30.0	40.0	1129	3510	4639	0.09438221033272028	0.1305415055043142	True	True
+selected_common_adjacent_merges	Bacillota	40-50%	40.0	50.0	5220	8392	13612	0.43638187594047817	0.31210949122285037	True	True
+selected_common_adjacent_merges	Bacillota	50-60%	50.0	60.0	3543	8078	11621	0.2961879284400602	0.3004314192204701	True	True
+selected_common_adjacent_merges	Bacillota	60-70%	60.0	70.0	503	3352	3855	0.042049824444072896	0.12466527819101458	True	True
+selected_common_adjacent_merges	Bacillota	70-100%	70.0	100.0	375	815	1190	0.03134927269687343	0.030310919369235346	True	True
+selected_common_adjacent_merges	Bacillota	no_hit			924	2014	2938	0.07724460792509613	0.07490330258851532	False	
+selected_common_adjacent_merges	Cyanobacteriota	<30%	0.0	30.0	794	155	949	0.05708944492378487	0.021302913688840023	True	True
+selected_common_adjacent_merges	Cyanobacteriota	30-40%	30.0	40.0	1398	715	2113	0.10051768766177739	0.09826827927432655	True	True
+selected_common_adjacent_merges	Cyanobacteriota	40-50%	40.0	50.0	5750	2563	8313	0.41343111878055794	0.3522539857064321	True	True
+selected_common_adjacent_merges	Cyanobacteriota	50-60%	50.0	60.0	3736	1978	5714	0.26862237561115904	0.2718526663001649	True	True
+selected_common_adjacent_merges	Cyanobacteriota	60-70%	60.0	70.0	874	833	1707	0.06284153005464481	0.11448598130841121	True	True
+selected_common_adjacent_merges	Cyanobacteriota	70-100%	70.0	100.0	607	220	827	0.04364394593039977	0.030236393622869707	True	True
+selected_common_adjacent_merges	Cyanobacteriota	no_hit			749	812	1561	0.05385389703767616	0.11159978009895546	False	

@@ -1,0 +1,67 @@
+{
+  "all_passed": true,
+  "total_test_records": 84762,
+  "hit_bearing": 78019,
+  "no_hit": 6743,
+  "unique_within_each_experiment": true,
+  "every_hit_assigned_once": true,
+  "no_hits_separate": true,
+  "original_input_hashes_unchanged": true,
+  "all_final_numerical_bins_meet_support": true,
+  "groups": [
+    {
+      "held_out_phylum": "Actinomycetota",
+      "group": "seen_test",
+      "expected": 13666,
+      "numerical": 13008,
+      "no_hit": 658,
+      "assignment_total": 13666,
+      "all_original_columns_preserved": true
+    },
+    {
+      "held_out_phylum": "Actinomycetota",
+      "group": "unseen_test",
+      "expected": 11062,
+      "numerical": 9476,
+      "no_hit": 1586,
+      "assignment_total": 11062,
+      "all_original_columns_preserved": true
+    },
+    {
+      "held_out_phylum": "Bacillota",
+      "group": "seen_test",
+      "expected": 11962,
+      "numerical": 11038,
+      "no_hit": 924,
+      "assignment_total": 11962,
+      "all_original_columns_preserved": true
+    },
+    {
+      "held_out_phylum": "Bacillota",
+      "group": "unseen_test",
+      "expected": 26888,
+      "numerical": 24874,
+      "no_hit": 2014,
+      "assignment_total": 26888,
+      "all_original_columns_preserved": true
+    },
+    {
+      "held_out_phylum": "Cyanobacteriota",
+      "group": "seen_test",
+      "expected": 13908,
+      "numerical": 13159,
+      "no_hit": 749,
+      "assignment_total": 13908,
+      "all_original_columns_preserved": true
+    },
+    {
+      "held_out_phylum": "Cyanobacteriota",
+      "group": "unseen_test",
+      "expected": 7276,
+      "numerical": 6464,
+      "no_hit": 812,
+      "assignment_total": 7276,
+      "all_original_columns_preserved": true
+    }
+  ]
+}
