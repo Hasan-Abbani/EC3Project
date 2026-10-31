@@ -8,3 +8,4 @@ analysis/nearest_train_identity/** -text
 code/nearest_train_identity.py text eol=lf
 analysis/similarity_bins/** -text
 code/make_similarity_bins.py text eol=lf
+code/generate_esm2_embeddings.py text eol=lf

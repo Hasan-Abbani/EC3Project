@@ -36,3 +36,32 @@ with `no_hit` kept separate. Each numerical stratum has at least 100 proteins
 per test group in every experiment. Regression checks:
 `python code/test_make_similarity_bins.py`.
 No classifier has been trained at this stage.
+
+Frozen ESM-2 embeddings:
+`code/generate_esm2_embeddings.py` uses the public
+`facebook/esm2_t33_650M_UR50D` checkpoint at a pinned revision. It reads only
+accession and sequence from the cleaned dataset and extracts final-layer
+residue means, excluding BOS/CLS, EOS, and padding. It never truncates input.
+Embeddings are generated once for the cleaned dataset, not per experiment.
+
+Use a Python environment with `code/requirements_esm2.txt` installed and an
+appropriate PyTorch CPU/CUDA build. With the project-local Windows environment:
+
+```powershell
+.venv\Scripts\python.exe code/generate_esm2_embeddings.py --pilot --device cpu --batch-size 1
+.venv\Scripts\python.exe code/test_generate_esm2_embeddings.py
+```
+
+The present 8 GB, non-CUDA computer is used for the CPU pilot only; the full
+146,677-protein job must run later on a CUDA machine. See the
+[GPU handoff instructions](docs/esm2_embeddings.md) for the exact commands.
+
+Pilot outputs are separate in `analysis/esm2_embeddings_pilot/`; the full
+accession-indexed float32 matrix and transactional checkpoint live in
+`analysis/esm2_embeddings/`. Check `progress.json` and `validation.json` before
+using a matrix: an initialized or partially completed matrix is not a completed
+embedding dataset. `--restart` preserves the previous run and starts a new
+timestamped output directory. Checkpoint downloads are cached under
+`.cache/huggingface/` without an API key. CUDA is preferred when available;
+CPU float32 fallback is supported but can be very slow for this 650M model.
+Model caches and embedding output directories are excluded from Git by default.

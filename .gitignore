@@ -16,3 +16,7 @@ venv/
 /analysis/nearest_train_identity/*/*_tmp/
 /analysis/nearest_train_identity/*/*_db*
 /analysis/nearest_train_identity/*/*_alignments*
+
+# Downloaded model cache and resumable ESM-2 embedding artifacts.
+/.cache/huggingface/
+/analysis/esm2_embeddings*/
