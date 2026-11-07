@@ -35,4 +35,14 @@ The common strata are <30%, 30-40%, 40-50%, 50-60%, 60-70%, and 70-100%,
 with `no_hit` kept separate. Each numerical stratum has at least 100 proteins
 per test group in every experiment. Regression checks:
 `python code/test_make_similarity_bins.py`.
-No classifier has been trained at this stage.
+The strata were selected outcome-independently, before classifier performance
+was examined.
+
+Bin-wise model evaluation:
+Run `python code/evaluate_similarity_bins.py` against the existing predictions
+and frozen bins. It creates `analysis/binwise_evaluation/` without overwriting
+existing outputs. The report compares seen/unseen performance within bins,
+includes class-composition controls and the existing nearest-homolog baseline,
+and records protein-level bootstrap intervals (2,000 replicates, seed 355).
+No model is retrained and no upstream results are regenerated.
+Regression checks: `python -m unittest discover -s code -p "test_*.py"`.
