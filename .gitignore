@@ -11,8 +11,8 @@ venv/
 **/mmseqs_tmp/
 
 .cache/
-analysis/esm2_embeddings_cuda/
-analysis/esm2_embeddings_pilot/
+# Generated embeddings, including the default output, CUDA, pilot, and resume folders.
+/analysis/esm2_embeddings*/
 # Reproducible nearest-training search intermediates and preflight runs.
 /analysis/nearest_train_identity/pilot/
 /analysis/nearest_train_identity_preflight/
