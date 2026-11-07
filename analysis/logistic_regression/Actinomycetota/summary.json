@@ -1,0 +1,51 @@
+{
+  "mode": "real",
+  "phylum": "Actinomycetota",
+  "sizes": {
+    "train": 109409,
+    "validation": 12158,
+    "seen_test": 13666,
+    "unseen_test": 11062
+  },
+  "tuning": [
+    {
+      "C": 0.001,
+      "val_accuracy": 0.8886329988484948,
+      "iterations": 166,
+      "seconds": 129
+    },
+    {
+      "C": 0.01,
+      "val_accuracy": 0.948840269781214,
+      "iterations": 80,
+      "seconds": 58
+    },
+    {
+      "C": 0.1,
+      "val_accuracy": 0.9387234742556342,
+      "iterations": 39,
+      "seconds": 29
+    },
+    {
+      "C": 1.0,
+      "val_accuracy": 0.9314031913143609,
+      "iterations": 42,
+      "seconds": 35
+    }
+  ],
+  "best_C": 0.01,
+  "test": {
+    "seen_test": {
+      "proteins": 13666,
+      "accuracy": 0.9529,
+      "class_not_in_train": 0,
+      "baseline1_accuracy_all": 0.941
+    },
+    "unseen_test": {
+      "proteins": 11062,
+      "accuracy": 0.9167,
+      "class_not_in_train": 0,
+      "baseline1_accuracy_all": 0.8233
+    }
+  }
+}

@@ -1,0 +1,4 @@
+held_out_phylum	train	validation	best_C	seen_test_n	seen_acc	unseen_test_n	unseen_acc	baseline1_seen_acc	baseline1_unseen_acc
+Actinomycetota	109409	12158	0.01	13666	0.9529	11062	0.9167	0.941	0.8233
+Bacillota	96541	10681	0.1	11962	0.9465	26888	0.9476	0.8974	0.9107
+Cyanobacteriota	112145	12977	0.1	13908	0.9212	7276	0.9193	0.8998	0.8799

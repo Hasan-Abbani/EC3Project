@@ -1,0 +1,51 @@
+{
+  "mode": "real",
+  "phylum": "Bacillota",
+  "sizes": {
+    "train": 96541,
+    "validation": 10681,
+    "seen_test": 11962,
+    "unseen_test": 26888
+  },
+  "tuning": [
+    {
+      "C": 0.001,
+      "val_accuracy": 0.9087164123209437,
+      "iterations": 134,
+      "seconds": 80
+    },
+    {
+      "C": 0.01,
+      "val_accuracy": 0.9514090440969947,
+      "iterations": 82,
+      "seconds": 54
+    },
+    {
+      "C": 0.1,
+      "val_accuracy": 0.956183877914053,
+      "iterations": 43,
+      "seconds": 28
+    },
+    {
+      "C": 1.0,
+      "val_accuracy": 0.9552476359891396,
+      "iterations": 39,
+      "seconds": 23
+    }
+  ],
+  "best_C": 0.1,
+  "test": {
+    "seen_test": {
+      "proteins": 11962,
+      "accuracy": 0.9465,
+      "class_not_in_train": 0,
+      "baseline1_accuracy_all": 0.8974
+    },
+    "unseen_test": {
+      "proteins": 26888,
+      "accuracy": 0.9476,
+      "class_not_in_train": 0,
+      "baseline1_accuracy_all": 0.9107
+    }
+  }
+}
