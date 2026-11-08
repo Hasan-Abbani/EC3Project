@@ -1,0 +1,59 @@
+{
+  "experiments": [
+    "Actinomycetota",
+    "Bacillota",
+    "Cyanobacteriota"
+  ],
+  "groups": [
+    "seen_test",
+    "unseen_test"
+  ],
+  "frozen_bins": [
+    "<30%",
+    "30-40%",
+    "40-50%",
+    "50-60%",
+    "60-70%",
+    "70-100%",
+    "no_hit"
+  ],
+  "bin_order": [
+    "<30%",
+    "30-40%",
+    "40-50%",
+    "50-60%",
+    "60-70%",
+    "70-100%",
+    "no_hit"
+  ],
+  "gap_sign_convention": "unseen_test minus seen_test",
+  "bootstrap_method": "ordinary protein-level nonparametric bootstrap",
+  "bootstrap_replicates": 2000,
+  "bootstrap_seed": 355,
+  "confidence_level": 0.95,
+  "bootstrap_interval": "percentile",
+  "cluster_bootstrap_used": false,
+  "cluster_bootstrap_limitation": "The frozen split construction does not cluster the held-out phylum; unseen_test proteins have no cluster50 assignment. Protein-level bootstrap used for both groups.",
+  "macro_f1_labels": "union of true and predicted labels within group/bin; fixed within each bootstrap",
+  "balanced_accuracy_labels": "classes observed in true labels for each evaluation sample",
+  "class_mix_weight_per_seen_observation": "(unseen class count / unseen common-support total) / seen class count",
+  "class_mix_unseen_comparison": "unseen accuracy restricted to the same common-support classes",
+  "input_sha256": {
+    "analysis\\logistic_regression\\Actinomycetota\\predictions.tsv": "4e883398a24951008f7d60ae49d6a80185fd888c137ac5736be94997bdc9e35c",
+    "analysis\\similarity_bins\\Actinomycetota_similarity_bins.tsv": "ca4acfd1f1d2556c949bb6635d446d8ba96dcdf52fb6a3e6221d718e9ad01487",
+    "splits_ec3\\Actinomycetota\\split_Actinomycetota.tsv": "ab2406a23de4b299109cc0cc2affb21c5e231b0e62797ee5f337debe92ca1945",
+    "splits_ec3\\Actinomycetota\\proteins_split_Actinomycetota.tsv": "ab2406a23de4b299109cc0cc2affb21c5e231b0e62797ee5f337debe92ca1945",
+    "analysis\\logistic_regression\\Bacillota\\predictions.tsv": "5fadd222b682fb9673031a8ddea8e570510b1be811890f29bc39421db02e6dff",
+    "analysis\\similarity_bins\\Bacillota_similarity_bins.tsv": "0b006f684c4f0e768a2a5672ed883d5d4cf5f1f3241c3f4c405078df479dad4c",
+    "splits_ec3\\Bacillota\\split_Bacillota.tsv": "3bcab03b8beb47d63cec776a9fe87ca6ea8064954ee0d29e5e5c592a3594daa9",
+    "splits_ec3\\Bacillota\\proteins_split_Bacillota.tsv": "3bcab03b8beb47d63cec776a9fe87ca6ea8064954ee0d29e5e5c592a3594daa9",
+    "analysis\\logistic_regression\\Cyanobacteriota\\predictions.tsv": "8dcf1c331bb04199634c5f436e65b8d5456087ce19b75608b47d97552c566a33",
+    "analysis\\similarity_bins\\Cyanobacteriota_similarity_bins.tsv": "c7989cea4e1bb31995aa77724ffa6fde9722b0fe594587c3d030ec91c567b17a",
+    "splits_ec3\\Cyanobacteriota\\split_Cyanobacteriota.tsv": "abe513a44ee962748f770f65e0dfa68dbf06ddf81eda3752c796b6f342584c0a",
+    "splits_ec3\\Cyanobacteriota\\proteins_split_Cyanobacteriota.tsv": "abe513a44ee962748f770f65e0dfa68dbf06ddf81eda3752c796b6f342584c0a"
+  },
+  "script_sha256": "61b85720d6e73411a4e2b51e01be03235a2f0a992e47126e81d0e7a2550d3f53",
+  "numpy_version": "2.5.4",
+  "pandas_version": "3.1.1",
+  "matplotlib_version": "3.11.2"
+}

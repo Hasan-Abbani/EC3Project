@@ -1,0 +1,60 @@
+{
+  "mode": "real",
+  "features": "kmer2 (400 overlapping 2-mer frequencies)",
+  "phylum": "Bacillota",
+  "sizes": {
+    "train": 96541,
+    "validation": 10681,
+    "seen_test": 11962,
+    "unseen_test": 26888
+  },
+  "tuning": [
+    {
+      "C": 0.001,
+      "val_accuracy": 0.3747776425428331,
+      "iterations": 98,
+      "seconds": 42,
+      "hit_max_iter": false,
+      "convergence_warnings": []
+    },
+    {
+      "C": 0.01,
+      "val_accuracy": 0.4603501544799176,
+      "iterations": 96,
+      "seconds": 38,
+      "hit_max_iter": false,
+      "convergence_warnings": []
+    },
+    {
+      "C": 0.1,
+      "val_accuracy": 0.4917142589645164,
+      "iterations": 139,
+      "seconds": 55,
+      "hit_max_iter": false,
+      "convergence_warnings": []
+    },
+    {
+      "C": 1.0,
+      "val_accuracy": 0.4847860687201573,
+      "iterations": 235,
+      "seconds": 90,
+      "hit_max_iter": false,
+      "convergence_warnings": []
+    }
+  ],
+  "best_C": 0.1,
+  "test": {
+    "seen_test": {
+      "proteins": 11962,
+      "accuracy": 0.4668,
+      "class_not_in_train": 0,
+      "baseline1_accuracy_all": 0.8974
+    },
+    "unseen_test": {
+      "proteins": 26888,
+      "accuracy": 0.5434,
+      "class_not_in_train": 0,
+      "baseline1_accuracy_all": 0.9107
+    }
+  }
+}

@@ -1,0 +1,393 @@
+{
+  "experiments": {
+    "Actinomycetota": {
+      "prediction_rows": 24728,
+      "unique_accessions": true,
+      "valid_bins": true,
+      "valid_groups": true,
+      "nonmissing_model_labels": true,
+      "stored_correctness_matches_labels": true,
+      "frozen_assignments_match_predictions": true,
+      "frozen_assignments_match_split": true,
+      "bin_counts": [
+        {
+          "group": "seen_test",
+          "similarity_bin": "<30%",
+          "prediction_count": 178,
+          "frozen_count": 178,
+          "reconciled": true
+        },
+        {
+          "group": "seen_test",
+          "similarity_bin": "30-40%",
+          "prediction_count": 1170,
+          "frozen_count": 1170,
+          "reconciled": true
+        },
+        {
+          "group": "seen_test",
+          "similarity_bin": "40-50%",
+          "prediction_count": 6199,
+          "frozen_count": 6199,
+          "reconciled": true
+        },
+        {
+          "group": "seen_test",
+          "similarity_bin": "50-60%",
+          "prediction_count": 4199,
+          "frozen_count": 4199,
+          "reconciled": true
+        },
+        {
+          "group": "seen_test",
+          "similarity_bin": "60-70%",
+          "prediction_count": 887,
+          "frozen_count": 887,
+          "reconciled": true
+        },
+        {
+          "group": "seen_test",
+          "similarity_bin": "70-100%",
+          "prediction_count": 375,
+          "frozen_count": 375,
+          "reconciled": true
+        },
+        {
+          "group": "seen_test",
+          "similarity_bin": "no_hit",
+          "prediction_count": 658,
+          "frozen_count": 658,
+          "reconciled": true
+        },
+        {
+          "group": "unseen_test",
+          "similarity_bin": "<30%",
+          "prediction_count": 461,
+          "frozen_count": 461,
+          "reconciled": true
+        },
+        {
+          "group": "unseen_test",
+          "similarity_bin": "30-40%",
+          "prediction_count": 1513,
+          "frozen_count": 1513,
+          "reconciled": true
+        },
+        {
+          "group": "unseen_test",
+          "similarity_bin": "40-50%",
+          "prediction_count": 3908,
+          "frozen_count": 3908,
+          "reconciled": true
+        },
+        {
+          "group": "unseen_test",
+          "similarity_bin": "50-60%",
+          "prediction_count": 2481,
+          "frozen_count": 2481,
+          "reconciled": true
+        },
+        {
+          "group": "unseen_test",
+          "similarity_bin": "60-70%",
+          "prediction_count": 981,
+          "frozen_count": 981,
+          "reconciled": true
+        },
+        {
+          "group": "unseen_test",
+          "similarity_bin": "70-100%",
+          "prediction_count": 132,
+          "frozen_count": 132,
+          "reconciled": true
+        },
+        {
+          "group": "unseen_test",
+          "similarity_bin": "no_hit",
+          "prediction_count": 1586,
+          "frozen_count": 1586,
+          "reconciled": true
+        }
+      ],
+      "baseline_missing_predictions": 2244,
+      "baseline_missing_on_no_hit": 2244,
+      "baseline_missing_on_hit": 0,
+      "baseline_missing_reason": "No qualifying training alignment, so the nearest-homolog label-transfer baseline has no donor accession.",
+      "cluster_ids_missing_by_group": {
+        "seen_test": 0,
+        "unseen_test": 11062
+      },
+      "unseen_cluster_ids_unavailable": true
+    },
+    "Bacillota": {
+      "prediction_rows": 38850,
+      "unique_accessions": true,
+      "valid_bins": true,
+      "valid_groups": true,
+      "nonmissing_model_labels": true,
+      "stored_correctness_matches_labels": true,
+      "frozen_assignments_match_predictions": true,
+      "frozen_assignments_match_split": true,
+      "bin_counts": [
+        {
+          "group": "seen_test",
+          "similarity_bin": "<30%",
+          "prediction_count": 268,
+          "frozen_count": 268,
+          "reconciled": true
+        },
+        {
+          "group": "seen_test",
+          "similarity_bin": "30-40%",
+          "prediction_count": 1129,
+          "frozen_count": 1129,
+          "reconciled": true
+        },
+        {
+          "group": "seen_test",
+          "similarity_bin": "40-50%",
+          "prediction_count": 5220,
+          "frozen_count": 5220,
+          "reconciled": true
+        },
+        {
+          "group": "seen_test",
+          "similarity_bin": "50-60%",
+          "prediction_count": 3543,
+          "frozen_count": 3543,
+          "reconciled": true
+        },
+        {
+          "group": "seen_test",
+          "similarity_bin": "60-70%",
+          "prediction_count": 503,
+          "frozen_count": 503,
+          "reconciled": true
+        },
+        {
+          "group": "seen_test",
+          "similarity_bin": "70-100%",
+          "prediction_count": 375,
+          "frozen_count": 375,
+          "reconciled": true
+        },
+        {
+          "group": "seen_test",
+          "similarity_bin": "no_hit",
+          "prediction_count": 924,
+          "frozen_count": 924,
+          "reconciled": true
+        },
+        {
+          "group": "unseen_test",
+          "similarity_bin": "<30%",
+          "prediction_count": 727,
+          "frozen_count": 727,
+          "reconciled": true
+        },
+        {
+          "group": "unseen_test",
+          "similarity_bin": "30-40%",
+          "prediction_count": 3510,
+          "frozen_count": 3510,
+          "reconciled": true
+        },
+        {
+          "group": "unseen_test",
+          "similarity_bin": "40-50%",
+          "prediction_count": 8392,
+          "frozen_count": 8392,
+          "reconciled": true
+        },
+        {
+          "group": "unseen_test",
+          "similarity_bin": "50-60%",
+          "prediction_count": 8078,
+          "frozen_count": 8078,
+          "reconciled": true
+        },
+        {
+          "group": "unseen_test",
+          "similarity_bin": "60-70%",
+          "prediction_count": 3352,
+          "frozen_count": 3352,
+          "reconciled": true
+        },
+        {
+          "group": "unseen_test",
+          "similarity_bin": "70-100%",
+          "prediction_count": 815,
+          "frozen_count": 815,
+          "reconciled": true
+        },
+        {
+          "group": "unseen_test",
+          "similarity_bin": "no_hit",
+          "prediction_count": 2014,
+          "frozen_count": 2014,
+          "reconciled": true
+        }
+      ],
+      "baseline_missing_predictions": 2938,
+      "baseline_missing_on_no_hit": 2938,
+      "baseline_missing_on_hit": 0,
+      "baseline_missing_reason": "No qualifying training alignment, so the nearest-homolog label-transfer baseline has no donor accession.",
+      "cluster_ids_missing_by_group": {
+        "seen_test": 0,
+        "unseen_test": 26888
+      },
+      "unseen_cluster_ids_unavailable": true
+    },
+    "Cyanobacteriota": {
+      "prediction_rows": 21184,
+      "unique_accessions": true,
+      "valid_bins": true,
+      "valid_groups": true,
+      "nonmissing_model_labels": true,
+      "stored_correctness_matches_labels": true,
+      "frozen_assignments_match_predictions": true,
+      "frozen_assignments_match_split": true,
+      "bin_counts": [
+        {
+          "group": "seen_test",
+          "similarity_bin": "<30%",
+          "prediction_count": 794,
+          "frozen_count": 794,
+          "reconciled": true
+        },
+        {
+          "group": "seen_test",
+          "similarity_bin": "30-40%",
+          "prediction_count": 1398,
+          "frozen_count": 1398,
+          "reconciled": true
+        },
+        {
+          "group": "seen_test",
+          "similarity_bin": "40-50%",
+          "prediction_count": 5750,
+          "frozen_count": 5750,
+          "reconciled": true
+        },
+        {
+          "group": "seen_test",
+          "similarity_bin": "50-60%",
+          "prediction_count": 3736,
+          "frozen_count": 3736,
+          "reconciled": true
+        },
+        {
+          "group": "seen_test",
+          "similarity_bin": "60-70%",
+          "prediction_count": 874,
+          "frozen_count": 874,
+          "reconciled": true
+        },
+        {
+          "group": "seen_test",
+          "similarity_bin": "70-100%",
+          "prediction_count": 607,
+          "frozen_count": 607,
+          "reconciled": true
+        },
+        {
+          "group": "seen_test",
+          "similarity_bin": "no_hit",
+          "prediction_count": 749,
+          "frozen_count": 749,
+          "reconciled": true
+        },
+        {
+          "group": "unseen_test",
+          "similarity_bin": "<30%",
+          "prediction_count": 155,
+          "frozen_count": 155,
+          "reconciled": true
+        },
+        {
+          "group": "unseen_test",
+          "similarity_bin": "30-40%",
+          "prediction_count": 715,
+          "frozen_count": 715,
+          "reconciled": true
+        },
+        {
+          "group": "unseen_test",
+          "similarity_bin": "40-50%",
+          "prediction_count": 2563,
+          "frozen_count": 2563,
+          "reconciled": true
+        },
+        {
+          "group": "unseen_test",
+          "similarity_bin": "50-60%",
+          "prediction_count": 1978,
+          "frozen_count": 1978,
+          "reconciled": true
+        },
+        {
+          "group": "unseen_test",
+          "similarity_bin": "60-70%",
+          "prediction_count": 833,
+          "frozen_count": 833,
+          "reconciled": true
+        },
+        {
+          "group": "unseen_test",
+          "similarity_bin": "70-100%",
+          "prediction_count": 220,
+          "frozen_count": 220,
+          "reconciled": true
+        },
+        {
+          "group": "unseen_test",
+          "similarity_bin": "no_hit",
+          "prediction_count": 812,
+          "frozen_count": 812,
+          "reconciled": true
+        }
+      ],
+      "baseline_missing_predictions": 1561,
+      "baseline_missing_on_no_hit": 1561,
+      "baseline_missing_on_hit": 0,
+      "baseline_missing_reason": "No qualifying training alignment, so the nearest-homolog label-transfer baseline has no donor accession.",
+      "cluster_ids_missing_by_group": {
+        "seen_test": 0,
+        "unseen_test": 7276
+      },
+      "unseen_cluster_ids_unavailable": true
+    }
+  },
+  "cluster_bootstrap_used": false,
+  "all_upstream_inputs_unchanged": true,
+  "source_hashes_before": {
+    "analysis\\logistic_regression\\Actinomycetota\\predictions.tsv": "4e883398a24951008f7d60ae49d6a80185fd888c137ac5736be94997bdc9e35c",
+    "analysis\\similarity_bins\\Actinomycetota_similarity_bins.tsv": "ca4acfd1f1d2556c949bb6635d446d8ba96dcdf52fb6a3e6221d718e9ad01487",
+    "splits_ec3\\Actinomycetota\\split_Actinomycetota.tsv": "ab2406a23de4b299109cc0cc2affb21c5e231b0e62797ee5f337debe92ca1945",
+    "splits_ec3\\Actinomycetota\\proteins_split_Actinomycetota.tsv": "ab2406a23de4b299109cc0cc2affb21c5e231b0e62797ee5f337debe92ca1945",
+    "analysis\\logistic_regression\\Bacillota\\predictions.tsv": "5fadd222b682fb9673031a8ddea8e570510b1be811890f29bc39421db02e6dff",
+    "analysis\\similarity_bins\\Bacillota_similarity_bins.tsv": "0b006f684c4f0e768a2a5672ed883d5d4cf5f1f3241c3f4c405078df479dad4c",
+    "splits_ec3\\Bacillota\\split_Bacillota.tsv": "3bcab03b8beb47d63cec776a9fe87ca6ea8064954ee0d29e5e5c592a3594daa9",
+    "splits_ec3\\Bacillota\\proteins_split_Bacillota.tsv": "3bcab03b8beb47d63cec776a9fe87ca6ea8064954ee0d29e5e5c592a3594daa9",
+    "analysis\\logistic_regression\\Cyanobacteriota\\predictions.tsv": "8dcf1c331bb04199634c5f436e65b8d5456087ce19b75608b47d97552c566a33",
+    "analysis\\similarity_bins\\Cyanobacteriota_similarity_bins.tsv": "c7989cea4e1bb31995aa77724ffa6fde9722b0fe594587c3d030ec91c567b17a",
+    "splits_ec3\\Cyanobacteriota\\split_Cyanobacteriota.tsv": "abe513a44ee962748f770f65e0dfa68dbf06ddf81eda3752c796b6f342584c0a",
+    "splits_ec3\\Cyanobacteriota\\proteins_split_Cyanobacteriota.tsv": "abe513a44ee962748f770f65e0dfa68dbf06ddf81eda3752c796b6f342584c0a"
+  },
+  "cluster_bootstrap_unavailable_reason": "The frozen split construction does not cluster the held-out phylum; unseen_test proteins have no cluster50 assignment. Protein-level bootstrap used for both groups.",
+  "source_hashes_after": {
+    "analysis\\logistic_regression\\Actinomycetota\\predictions.tsv": "4e883398a24951008f7d60ae49d6a80185fd888c137ac5736be94997bdc9e35c",
+    "analysis\\similarity_bins\\Actinomycetota_similarity_bins.tsv": "ca4acfd1f1d2556c949bb6635d446d8ba96dcdf52fb6a3e6221d718e9ad01487",
+    "splits_ec3\\Actinomycetota\\split_Actinomycetota.tsv": "ab2406a23de4b299109cc0cc2affb21c5e231b0e62797ee5f337debe92ca1945",
+    "splits_ec3\\Actinomycetota\\proteins_split_Actinomycetota.tsv": "ab2406a23de4b299109cc0cc2affb21c5e231b0e62797ee5f337debe92ca1945",
+    "analysis\\logistic_regression\\Bacillota\\predictions.tsv": "5fadd222b682fb9673031a8ddea8e570510b1be811890f29bc39421db02e6dff",
+    "analysis\\similarity_bins\\Bacillota_similarity_bins.tsv": "0b006f684c4f0e768a2a5672ed883d5d4cf5f1f3241c3f4c405078df479dad4c",
+    "splits_ec3\\Bacillota\\split_Bacillota.tsv": "3bcab03b8beb47d63cec776a9fe87ca6ea8064954ee0d29e5e5c592a3594daa9",
+    "splits_ec3\\Bacillota\\proteins_split_Bacillota.tsv": "3bcab03b8beb47d63cec776a9fe87ca6ea8064954ee0d29e5e5c592a3594daa9",
+    "analysis\\logistic_regression\\Cyanobacteriota\\predictions.tsv": "8dcf1c331bb04199634c5f436e65b8d5456087ce19b75608b47d97552c566a33",
+    "analysis\\similarity_bins\\Cyanobacteriota_similarity_bins.tsv": "c7989cea4e1bb31995aa77724ffa6fde9722b0fe594587c3d030ec91c567b17a",
+    "splits_ec3\\Cyanobacteriota\\split_Cyanobacteriota.tsv": "abe513a44ee962748f770f65e0dfa68dbf06ddf81eda3752c796b6f342584c0a",
+    "splits_ec3\\Cyanobacteriota\\proteins_split_Cyanobacteriota.tsv": "abe513a44ee962748f770f65e0dfa68dbf06ddf81eda3752c796b6f342584c0a"
+  },
+  "all_passed": true
+}

@@ -1,0 +1,60 @@
+{
+  "mode": "real",
+  "features": "kmer2 (400 overlapping 2-mer frequencies)",
+  "phylum": "Actinomycetota",
+  "sizes": {
+    "train": 109409,
+    "validation": 12158,
+    "seen_test": 13666,
+    "unseen_test": 11062
+  },
+  "tuning": [
+    {
+      "C": 0.001,
+      "val_accuracy": 0.36815265668695507,
+      "iterations": 103,
+      "seconds": 58,
+      "hit_max_iter": false,
+      "convergence_warnings": []
+    },
+    {
+      "C": 0.01,
+      "val_accuracy": 0.42120414541865436,
+      "iterations": 90,
+      "seconds": 47,
+      "hit_max_iter": false,
+      "convergence_warnings": []
+    },
+    {
+      "C": 0.1,
+      "val_accuracy": 0.43329494982727423,
+      "iterations": 126,
+      "seconds": 63,
+      "hit_max_iter": false,
+      "convergence_warnings": []
+    },
+    {
+      "C": 1.0,
+      "val_accuracy": 0.43683171574272084,
+      "iterations": 234,
+      "seconds": 112,
+      "hit_max_iter": false,
+      "convergence_warnings": []
+    }
+  ],
+  "best_C": 1.0,
+  "test": {
+    "seen_test": {
+      "proteins": 13666,
+      "accuracy": 0.4499,
+      "class_not_in_train": 0,
+      "baseline1_accuracy_all": 0.941
+    },
+    "unseen_test": {
+      "proteins": 11062,
+      "accuracy": 0.4269,
+      "class_not_in_train": 0,
+      "baseline1_accuracy_all": 0.8233
+    }
+  }
+}
