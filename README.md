@@ -138,3 +138,21 @@ python code/evaluate_similarity_bins.py --output analysis/binwise_evaluation_rep
 Both commands refuse to overwrite an existing output directory. Evaluation
 reads the included frozen predictions, not the separate retraining outputs.
 The reports document the study's statistical and dataset limitations.
+
+## 2-mer baseline
+
+`code/run_kmer_logreg.py` trains the same logistic-regression pipeline on 400
+overlapping amino-acid 2-mer frequencies (counts divided by L-1) instead of the
+ESM-2 embeddings, using the same splits, training-only standardization, C grid
+and validation-based selection. It needs only numpy and scikit-learn, and reads
+`data/proteins_ec3.tsv` (run `git lfs pull` first). Frozen predictions and the
+bin-wise evaluation are in `analysis/kmer_baseline/`; see
+[its README](analysis/kmer_baseline/README.md) for the method, results, and how
+the bin-wise evaluation was run. To retrain without replacing the frozen
+predictions, use a new local output directory:
+
+```text
+python code/run_kmer_logreg.py --phylum Actinomycetota --out .cache/reproduction/kmer_Actinomycetota
+```
+
+Repeat with Bacillota and Cyanobacteriota for the other experiments.
