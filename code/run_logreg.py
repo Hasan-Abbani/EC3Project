@@ -30,10 +30,11 @@ import numpy as np
 from sklearn.linear_model import LogisticRegression
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-PROJECT = os.path.abspath(os.path.join(HERE, "..", "..", "..", ".."))  # .../CMPS 355
-EMB_DIR = os.path.join(PROJECT, "Me", "Other Claude", "Claude", "EC3_ESM2_Results", "esm2_embeddings_cuda")
-LABELS = os.path.join(HERE, "..", "Data", "Cleaning - EC Level 3", "2 Cleaned Data (send after yes)",
-                      "data", "proteins_ec3.tsv")
+ROOT = os.path.abspath(os.path.join(HERE, ".."))  # repository root
+# Folder with embeddings.npy and accessions.tsv (default output of generate_esm2_embeddings.py).
+EMB_DIR = os.path.join(ROOT, "analysis", "esm2_embeddings")
+# Cleaned label table written by clean_ec3.py.
+LABELS = os.path.join(ROOT, "data", "proteins_ec3.tsv")
 SEED = 355
 csv.field_size_limit(10**9)
 

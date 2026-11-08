@@ -46,9 +46,10 @@ the script recomputes them, and they are deterministic).
 
 Re-running
 ----------
-Needs numpy and scikit-learn (1.9.1 used). The paths to embeddings.npy /
-accessions.tsv (EMB_DIR) and proteins_ec3.tsv (LABELS) are set at the top
-of run_logreg.py for our folder layout; edit those two lines to your paths.
+Needs numpy and scikit-learn (1.9.1 used). By default run_logreg.py reads
+embeddings.npy / accessions.tsv from analysis/esm2_embeddings/ (EMB_DIR) and
+labels from data/proteins_ec3.tsv (LABELS), relative to the repository root;
+if yours are elsewhere, edit those two lines at the top of the script.
 The normal default C grid now matches the four values used in the recorded
 runs. The separate --practice mode retains its single-value default.
 

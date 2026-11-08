@@ -34,10 +34,11 @@ The local `manuscript/` folder is also not included in the repository.
 
 The current MMseqs2 scripts use Windows/WSL. Set `MMSEQS_WSL` in
 `code/make_splits_ec3_final.py` and `MMSEQS` in `code/nearest_train_identity.py`
-to your installed executable. Before classifier training, set `EMB_DIR` and
-`LABELS` near the top of `code/run_logreg.py` to your embedding folder and
-`data/proteins_ec3.tsv`. The existing scripts are preserved; these path settings
-must be adjusted for another machine.
+to your installed executable. `code/run_logreg.py` reads embeddings from
+`analysis/esm2_embeddings/` (the default output of
+`code/generate_esm2_embeddings.py`) and labels from `data/proteins_ec3.tsv`;
+if yours are elsewhere, change `EMB_DIR` and `LABELS` near the top of the
+script. The MMseqs2 path settings must be adjusted for another machine.
 
 ## Dataset construction
 
