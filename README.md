@@ -5,6 +5,10 @@ UniProtKB/Swiss-Prot (recorded release 2026_03). The dataset contains public
 protein sequences and annotations. See [UniProt attribution and data licensing](DATA_LICENSE.md)
 for the source, CC BY 4.0 terms, citation, and description of our modifications.
 
+
+Project code is released under the MIT License. UniProt-derived data remain subject to the licensing terms described in [DATA_LICENSE.md](DATA_LICENSE.md).
+
+
 ## Setup and available artifacts
 
 From the project root, install the analysis dependencies in a Python environment:
