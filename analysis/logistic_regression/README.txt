@@ -15,12 +15,19 @@ hit ("no_hit") are counted as wrong.
 
 Folder layout
 -------------
+Paths below are relative to analysis/logistic_regression/.
+
 README.txt                 this file
 results_overview.tsv       one row per held-out phylum (sizes, best C, accuracies)
-code/run_logreg.py         the script that produced everything below
+../../code/run_logreg.py   the script in the repository's top-level code/ directory
 <phylum>/predictions.tsv   one row per test protein (seen and unseen test)
 <phylum>/summary.json      sizes, validation accuracy for every C, best C, test accuracy
+
+Generated locally and excluded from Git:
 <phylum>/models/C_<C>.npz  the fitted model for each C value tried
+
+The model files described below belong to the local training archive. Cloning
+the repository does not download those fitted arrays; retraining regenerates them.
 
 predictions.tsv columns
 -----------------------
@@ -42,4 +49,8 @@ Re-running
 Needs numpy and scikit-learn (1.9.1 used). The paths to embeddings.npy /
 accessions.tsv (EMB_DIR) and proteins_ec3.tsv (LABELS) are set at the top
 of run_logreg.py for our folder layout; edit those two lines to your paths.
-  python run_logreg.py --split split_<phylum>.tsv --bins <phylum>_similarity_bins.tsv --phylum <phylum> --C 0.001,0.01,0.1,1 --out <folder>
+The normal default C grid now matches the four values used in the recorded
+runs. The separate --practice mode retains its single-value default.
+
+From the repository root, using a new local output directory:
+  python code/run_logreg.py --split splits_ec3/<phylum>/split_<phylum>.tsv --bins analysis/similarity_bins/<phylum>_similarity_bins.tsv --phylum <phylum> --C 0.001,0.01,0.1,1 --out .cache/reproduction/<phylum>

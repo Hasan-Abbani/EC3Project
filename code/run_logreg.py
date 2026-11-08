@@ -146,14 +146,14 @@ def main():
     ap.add_argument("--phylum", default="Actinomycetota")
     ap.add_argument("--out", required=True)
     ap.add_argument("--practice", action="store_true")
-    ap.add_argument("--C", default=None, help="C values to try, comma-separated (default 0.01,0.1,1)")
+    ap.add_argument("--C", default=None, help="C values to try, comma-separated (default 0.001,0.01,0.1,1)")
     ap.add_argument("--train_sample", type=int, default=0, help="use only this many training proteins (0 = all)")
     ap.add_argument("--max_iter", type=int, default=300)
     a = ap.parse_args()
     if a.practice:
         a.C = a.C or "1"
         a.train_sample = a.train_sample or 20000
-    a.C = a.C or "0.01,0.1,1"
+    a.C = a.C or "0.001,0.01,0.1,1"
     os.makedirs(os.path.join(a.out, "models"), exist_ok=True)
 
     log("loading embeddings and labels")

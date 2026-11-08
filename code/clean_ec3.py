@@ -29,7 +29,7 @@ THE RULES, IN ORDER (numbers match "Cleaning Decisions - To Confirm.pdf")
     4  keep proteins whose EC numbers all give the SAME 3-level label
        (3.2.2.6; 3.2.2.7 -> 3.2.2, kept.  3.5.4.19; 3.6.1.31 -> two labels, dropped)
     5  drop sequences labelled with different EC numbers in different entries
-    6  drop sequences longer than 1,022 amino acids  (ESM-2 input limit)
+    6  drop sequences longer than 1,022 amino acids  (chosen analysis length cap)
     7  drop sequences with X, B or Z  (unknown amino acid)
     8  keep one copy of each identical sequence per phylum (prefer a lab-tested copy)
     9  keep every evidence level, and add a yes/no "lab_tested" column
@@ -51,7 +51,7 @@ from collections import Counter, defaultdict
 # --------------------------------------------------------------------------
 # Settings
 # --------------------------------------------------------------------------
-MAX_LENGTH = 1022            # ESM-2 was trained on sequences of at most 1,022 amino acids
+MAX_LENGTH = 1022            # Chosen analysis cap for embedding without truncation
 UNKNOWN_LETTERS = set("XBZ")  # X = unknown, B = D or N, Z = E or Q
 LAB_CODE = "ECO:0000269"     # evidence code "experimental evidence used in manual assertion"
 MIN_CLASS = 10               # used only for the summary numbers, not for removing proteins
@@ -180,8 +180,8 @@ for r in rows:
     labels_per_sequence[r["Sequence"]].add(r["ec"])
 apply_rule("5 contradicting labels", lambda r: len(labels_per_sequence[r["Sequence"]]) == 1)
 
-# Rule 6. ESM-2 reads at most 1,022 amino acids; longer ones would be cut and
-#         the embedding would describe only part of the protein.
+# Rule 6. Apply the chosen 1,022-residue analysis cap so retained proteins are
+#         embedded without truncation; this is not a universal ESM-2 limit.
 apply_rule("6 longer than 1,022", lambda r: r["length"] <= MAX_LENGTH)
 
 # Rule 7. X, B, Z mean "unknown or ambiguous amino acid". U and O are real, rare ones: kept.

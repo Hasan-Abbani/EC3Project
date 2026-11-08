@@ -26,6 +26,7 @@ Embeddings, fitted model arrays, dependency caches, and temporary databases are
 kept locally and are excluded from Git. They must be regenerated or supplied
 separately to repeat model training. The original UniProt download and cleaning
 logs are not included.
+The local `manuscript/` folder is also not included in the repository.
 
 The current MMseqs2 scripts use Windows/WSL. Set `MMSEQS_WSL` in
 `code/make_splits_ec3_final.py` and `MMSEQS` in `code/nearest_train_identity.py`
@@ -48,7 +49,8 @@ Run code/make_splits_ec3_final.py to create splits; do not rerun it to reproduce
 the nearest-training analysis of the existing frozen splits.
 
 MMseqs2 is required for 50% sequence-identity clustering.
-Random seed: 355.
+Seen-test cluster-selection seed: 355.
+Validation cluster-selection seed: 356 (`SEED + 1`).
 Minimum training examples per EC3 class: 10.
 
 Validate the existing final splits without changing files:
